@@ -66,7 +66,7 @@ func IndexHandle(w http.ResponseWriter, r *http.Request) {
  <SCRIPT LANGUAGE="JavaScript">
  <!--
 	function doSubmit(){
-		$.post("http://localhost/",{name:$("#name").val(),rule:$("#rule").val(),text:$("#text").val()},function(data){
+		$.post("/",{name:$("#name").val(),rule:$("#rule").val(),text:$("#text").val()},function(data){
 			alert("分类结果："+data);
 		});
 	}
